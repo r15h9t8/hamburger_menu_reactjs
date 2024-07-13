@@ -1,0 +1,110 @@
+/* Write your CSS here */
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 1px #dcdcdc;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 458px;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+}
+
+.hamburger-icon-button {
+  background-color: transparent;
+  width: 42px;
+  height: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 458px;
+}
+
+.close-button {
+  align-self: flex-end;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-links-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.nav-link-item {
+  list-style-type: none;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e293b;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.link-name {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-content {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    max-width: 1110px;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .modal-container {
+    max-width: 1110px;
+  }
+
+  .link-name {
+    font-size: 40px;
+  }
+}
